@@ -9,6 +9,7 @@ git config --global user.email "your_email@example.com"
 ```bash
 gh auth login
 ```
+Nó hỏi authen thì trả lời là `NO` và đăng nhập bằng website
 # Usage
 Để tự tạo repo theo tên folder và commit trên github thì copy file runGit.bat vào folder đó và chạy file đó.
 # Git basic
