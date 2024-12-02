@@ -7,7 +7,7 @@ findstr runGit.bat .gitignore || echo runGit.bat >> .gitignore
 git init
 git pull origin main
 git add .
-git commit -m "first commit"
+git commit -m "Commit at %date%"
 git branch -M main
 git remote add origin https://github.com/Quanghusst/%folderName%.git
 git push -u origin main
