@@ -1,5 +1,9 @@
-# Download Git and GitHub Cli in scoop
-# Set up
+# Yêu cầu 
+Tải git 
+
+Tải github cli
+
+# Đăng nhập 
 ## Git 
 ```bash
 git config --global user.name "Your Name"
@@ -10,8 +14,10 @@ git config --global user.email "your_email@example.com"
 gh auth login
 ```
 Nó hỏi authen thì trả lời là `NO` và đăng nhập bằng website
-# Usage
-Để tự tạo repo theo tên folder và commit trên github thì copy file runGit.bat vào folder đó và chạy file đó.
+# Cách dùng
+B1: Copy file RunGit.bat vào folder cần push 
+
+B2: Chạy file RunGit.bat (nếu chưa có repository trên github thì nó sẽ tự tạo theo tên thư mục)
 # Git basic
 Mở git bash (chuột phải) trong folder trống muốn tải package github trên mạng về 
 
