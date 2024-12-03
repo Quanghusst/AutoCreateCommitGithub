@@ -28,6 +28,7 @@ Mở git bash (chuột phải) trong folder trống muốn tải package git
 	B2:	git add .
 
 	B3:	git commit -m "Mô tả về các thay đổi"
+ # Có câu hỏi thì comment
 
 	B4:	git push origin main (nếu là nhánh khác thì thay "main" bằng tên nhánh khác)
 
