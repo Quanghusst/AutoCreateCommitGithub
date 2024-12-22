@@ -8,8 +8,6 @@ echo GitHub Username: %username%
 for %%F in (%cd%) do set folderName=%%~nxF
 echo %folderName%
 
-
-SET /P branchString=Please enter a branch: 
 SET /P messageString=Please enter a message: 
 echo ========================== CREATE REPO ======================================
 echo.   
@@ -25,7 +23,7 @@ echo.
 git init
 git pull origin main
 git add .
-git commit -m "Commit at %hh%:%mm% %ap% %dd%/%mm%/%yyyy%"
+git commit -m "%messageString% at %hh%:%mm% %ap% %dd%/%mm%/%yyyy%"
 git branch -M main
 git remote add origin https://github.com/%username%/%folderName%.git
 git push -u origin main
