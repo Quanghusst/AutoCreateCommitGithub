@@ -23,7 +23,7 @@ echo.
 git init
 git pull origin main
 git add .
-git commit -m "%messageString% at %hh%:%mm% %ap% %dd%/%mm%/%yyyy%"
+git commit -m "%messageString%"
 git branch -M main
 git remote add origin https://github.com/%username%/%folderName%.git
 git push -u origin main
