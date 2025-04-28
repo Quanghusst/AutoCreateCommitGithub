@@ -15,9 +15,13 @@ gh auth login
 ```
 Nó hỏi authen thì trả lời là `NO` và đăng nhập bằng website
 # Cách dùng
-B1: Copy file RunGit.bat vào folder cần push 
+B1: Copy file runGit.bat vào folder cần push (neu la linux thi copy file runGit.sh)
 
-B2: Chạy file RunGit.bat (nếu chưa có repository trên github thì nó sẽ tự tạo theo tên thư mục)
+B2: Chạy file runGit.bat (nếu chưa có repository trên github thì nó sẽ tự tạo theo tên thư mục)
+```bash
+./runGit.sh # For linux
+./runGit.bat # For windows
+```
 # Git basic
 Mở git bash (chuột phải) trong folder trống muốn tải package github trên mạng về 
 
