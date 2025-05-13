@@ -1,42 +1,112 @@
-# Yêu cầu 
-Tải git 
+# 🚀 Auto Create Commit & Push to GitHub
 
-Tải github cli
+## 🧩 Yêu cầu cài đặt
 
-# Đăng nhập 
-## Git 
+### ✅ Bắt buộc
+- [x] [Git](https://git-scm.com/downloads)
+- [x] [GitHub CLI (`gh`)](https://cli.github.com/)
+
+---
+
+## 🔑 Đăng nhập Git và GitHub
+
+### Git
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "your_email@example.com"
-```
-## GitHub cli
+````
+
+### GitHub CLI
+
 ```bash
 gh auth login
 ```
-Nó hỏi authen thì trả lời là `NO` và đăng nhập bằng website
-# Cách dùng
-B1: Copy file runGit.bat vào folder cần push (neu la linux thi copy file runGit.sh)
 
-B2: Chạy file runGit.bat (nếu chưa có repository trên github thì nó sẽ tự tạo theo tên thư mục)
-```bash
-./runGit.sh # For linux
-./runGit.bat # For windows
+> ❗ Khi được hỏi `Authenticate Git with your GitHub credentials?`, chọn `No` và làm theo hướng dẫn mở trình duyệt.
+
+---
+
+## 🚚 Cài đặt để dùng lệnh `runGit` từ bất kỳ đâu
+
+### 🪟 Windows
+
+1. **Chạy `autoSetPath.bat`** để thêm thư mục vào `PATH`:
+
+```cmd
+.\autoSetPath.bat
 ```
-# Git basic
-Mở git bash (chuột phải) trong folder trống muốn tải package github trên mạng về 
 
-	B1:	git clone <URL của repository> 
+> ✅ Sau đó bạn có thể gõ `runGit` ở bất kỳ nơi nào trong CMD mới.
 
-	B1.5:	git checkout -b ten_nhanh (nếu muốn chuyển sang nhánh khác)
+---
 
-	B2:	git add .
+### 🐧 Linux / WSL / macOS
 
-	B3:	git commit -m "Mô tả về các thay đổi"
- 
+1. **Chạy `setup.sh`** để thêm thư mục vào `PATH`:
 
-	B4:	git push origin main (nếu là nhánh khác thì thay "main" bằng tên nhánh khác)
+```bash
+chmod +x setup.sh
+./setup.sh
+```
 
-	B5: 	|Nhập TK Quanghusst |MK: ****** (Expires https://github.com/settings/tokens)
-	
-xem các nhánh có trong git: 	git branch -r
- # Có câu hỏi thì comment
+> ✅ Sau đó mở terminal mới và gõ `runGit` từ bất kỳ đâu.
+
+---
+
+## 🚀 Cách sử dụng
+
+### Cách 1: Tự động với `runGit`
+
+> Đảm bảo file `runGit.bat` (Windows) hoặc `runGit.sh` (Linux) nằm trong thư mục chứa project.
+
+```bash
+runGit
+```
+
+* Script sẽ:
+
+  * Tự tạo repo GitHub trùng tên thư mục hiện tại.
+  * Khởi tạo `.gitignore`.
+  * Tự động `init`, `add`, `commit`, `push` lên GitHub.
+
+---
+
+### Cách 2: Tự làm thủ công với Git
+
+```bash
+git clone <URL-repo>
+cd <folder>
+
+git checkout -b <ten-nhanh-moi>   # nếu muốn tạo nhanh mới
+
+git add .
+git commit -m "Mô tả thay đổi"
+git push origin main              # hoặc tên nhánh khác
+```
+
+---
+
+## 🧠 Mẹo và thông tin thêm
+
+* Xem các nhánh trên remote:
+
+  ```bash
+  git branch -r
+  ```
+
+* Lỗi token/mật khẩu:
+
+  * Tạo token mới: [https://github.com/settings/tokens](https://github.com/settings/tokens)
+  * Dùng GitHub CLI để tránh phải nhập mỗi lần.
+
+---
+
+## ❓ Câu hỏi? Góp ý?
+
+Comment trực tiếp tại repository hoặc mở issue!
+
+```
+
+---
+
+
