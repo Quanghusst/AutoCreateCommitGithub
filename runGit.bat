@@ -22,10 +22,6 @@ echo.
 gh repo create %folderName% --public --confirm
 pause
 echo.   
-echo ========================== CREATE FILE: .gitignore ==========================
-echo.   
-findstr runGit.bat .gitignore || echo runGit.bat >> .gitignore
-echo.   
 echo ========================== PULL and PUSH ====================================
 echo.
 git init

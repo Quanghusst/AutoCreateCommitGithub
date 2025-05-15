@@ -30,12 +30,6 @@ echo
 gh repo create "$folderName" --public --confirm
 echo
 
-echo "========================== CREATE FILE: .gitignore =========================="
-echo
-if ! grep -q "runGit.sh" .gitignore 2>/dev/null; then
-    echo "runGit.sh" >> .gitignore
-fi
-echo
 
 echo "========================== PULL and PUSH ===================================="
 echo
